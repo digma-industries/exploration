@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://cp8t318ibqrbr"]
+[gd_scene load_steps=6 format=4 uid="uid://cp8t318ibqrbr"]
 
 [ext_resource type="Texture2D" uid="uid://df3togx3adrlp" path="res://assets/tilemap.png" id="1_otl7k"]
 [ext_resource type="PackedScene" uid="uid://bcrue1uig2nlr" path="res://scenes/player/player.tscn" id="2_rm4tf"]
+[ext_resource type="PackedScene" uid="uid://bbw4nc304amu0" path="res://scenes/hud/hud.tscn" id="3_nfn2y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rm4tf"]
 texture = ExtResource("1_otl7k")
@@ -24,3 +25,5 @@ tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAD+/wAAAAAAAAA
 tile_set = SubResource("TileSet_whi12")
 
 [node name="Player" parent="." instance=ExtResource("2_rm4tf")]
+
+[node name="HUD" parent="." instance=ExtResource("3_nfn2y")]
