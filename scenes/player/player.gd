@@ -1,8 +1,12 @@
 extends CharacterBody2D
+class_name Player
 
 ### STATS ###
 # top speed
 var speed := 48.0
+
+func _ready() -> void:
+  GameState.player = self
 
 func _physics_process(delta: float) -> void:
   _process_movement(delta)
